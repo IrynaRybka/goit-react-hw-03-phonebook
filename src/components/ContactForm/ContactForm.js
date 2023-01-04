@@ -7,6 +7,11 @@ class ContactForm extends Component {
     name: '',
     number: '',
   };
+  
+  ContactForm.propTypes = {
+  onSubmitForm: PropTypes.func.isRequired,
+  onincludeThisName: PropTypes.func.isRequired,
+};
 
   phoneInputChange = event => {
     const { name, value } = event.currentTarget;
@@ -66,8 +71,5 @@ class ContactForm extends Component {
     );
   }
 }
-ContactForm.propTypes = {
-  onSubmitForm: PropTypes.func.isRequired,
-  onincludeThisName: PropTypes.func.isRequired,
-};
+
 export default ContactForm;
