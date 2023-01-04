@@ -8,7 +8,7 @@ class ContactForm extends Component {
     number: '',
   };
   
-  ContactForm.propTypes = {
+propTypes = {
   onSubmitForm: PropTypes.func.isRequired,
   onincludeThisName: PropTypes.func.isRequired,
 };
